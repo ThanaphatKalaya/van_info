@@ -1,0 +1,18 @@
+
+<h1>VAN Infomation</h1>
+<form>
+<input type="button" value="Operator" onclick="window.location.href='/operators'" />
+<input type="button" value="Routes" onclick="window.location.href='/routes'" />
+<input type="button" value="Timetable" onclick="window.location.href='/timetable'" />
+</form>
+	<h2><%= title %></h2>
+<table  border="1">
+<% for(var i=0; i < names.length; i++) { %>
+   <tr>
+   <% for(var j=0; j < names[i].string.length; j++) { %>
+     <td><%= names[i].string[j] %></td>
+	<% } %>
+   </tr>
+<% } %>
+</table>
+<ul>
